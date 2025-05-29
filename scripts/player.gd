@@ -25,7 +25,7 @@ func _physics_process(delta: float) -> void:
 	if direction > 0:
 		animated_sprite.flip_h = false
 	elif direction < 0:
-		animated_sprite.flip_h = true
+		animated_sprite.flip_h = false
 	
 	# play animaTONS
 	if is_on_floor():
