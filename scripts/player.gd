@@ -20,6 +20,8 @@ func _physics_process(delta: float) -> void:
 
 	# set directon to -1 0 1
 	var direction := Input.get_axis("move_left", "move_right")
+	if direction == 0.0:
+		direction = Input.get_axis("dpad_left", "dpad_right")
 	
 	# flip sprite
 	if direction > 0:
